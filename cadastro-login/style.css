@@ -33,9 +33,19 @@ p {
 }
 
 a {
+    display: block;
     text-decoration: none;
     color: var(--cor1);
     font-weight: bold;
+    font-size: 14px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    color: #02735E;
 }
 
 body{
@@ -57,7 +67,7 @@ section#container {
 
     margin: auto;
     width: 300px;
-    height: 500px;
+    height: 550px;
     text-align: center;
 }
 
@@ -79,6 +89,7 @@ div#login > img {
 label {
     display: block;
     text-align: left;
+    margin-bottom: -10px;
 }
 
 div#login input {
@@ -91,14 +102,23 @@ div#login input {
 #login, #senha {
     background-color: rgba(255, 255, 255, 0.668);
     width: 240px ;    
-    padding: 10px 2px;
+    padding: 10px 3px;
 }
 
 #entrar {
     background-color: var(--cor2);
     width: 100%;
-    height: 35px;
+    height: 40px;
+    font-size: 1em;
     color: white;
     font-weight: bold;
     box-shadow: 0px 0px 15px #04d9b23e;
+}
+
+#entrar:hover {
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.400);
+}
+
+#entrar:active {
+    background-color: #009378;
 }
