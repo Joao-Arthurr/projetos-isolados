@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 750px){
+    header{
+        font-size: 3em;
+    }
+
+    section#container{
+        width: 100vw;
+        font-size: 7em;
+    }
+
+    div {
+        padding: 30px;
+    }
+}

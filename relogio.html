@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horário Brasil</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-query.css">
+</head>
+<body>
+    <header>
+        <h1>Horário Brasil</h1>
+    </header>
+    <main>
+        <section id="container">
+            <div id="horas">00</div>
+            :
+            <div id="minutos">00</div>
+            :
+            <div id="segundos">00</div>
+        </section>
+    </main>
+
+    <script>
+        var divHoras = document.getElementById('horas')
+        var divMinutos = document.getElementById('minutos')
+        var divSegundos = document.getElementById('segundos')
+        
+        setInterval(() => {
+        var horario = new Date()
+        var horas = horario.getHours()
+        var minutos = horario.getMinutes()
+        var segundos = horario.getSeconds()
+
+        divHoras.innerHTML = `${formatarTempo(horas)}`
+        divMinutos.innerHTML = `${formatarTempo(minutos)}`
+        divSegundos.innerHTML = `${formatarTempo(segundos)}`
+        }, 1000) // Chama a função dentro dela a cada 1000 milessegundos (ou seja, a cada segundo)
+
+        function formatarTempo(time){
+            return time < 10 ? "0" + time : time
+        } 
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Troca Cor</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        div#container {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+
+            margin: auto;
+            text-align: center;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.447);
+            padding: 30px;
+            width: 300px;
+        }
+
+        #b1 {
+            margin-top: 15px;
+            padding: 4px 16px;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div id="container">
+            <label for="cor"><h1>Selecione uma cor:</h1></label>
+            <p><input type="color" name="cor" id="cor" ></p>
+            <p><input id="b1" type="button" value="Aplicar" onclick="mudarCor()"></p>
+        </div>
+    </main>
+
+    <script>
+        function mudarCor(){
+            var cor = window.document.getElementById('cor')
+            window.document.body.style.backgroundColor = cor.value
+        }
+    </script>
+</body>
+</html>
