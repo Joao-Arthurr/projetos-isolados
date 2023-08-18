@@ -52,14 +52,17 @@ a:active {
 }
 
 body{
-    background: rgba(0, 0, 0, 0.737) url(imagens/img-fundo.jpg) no-repeat center center;
+    background: rgba(0, 0, 0, 0.737) url(imagens/img-fundo.jpg) repeat center center;
     background-size: cover;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100vh;
 }
 
 main {
     width: 100vw;
     height: 100vh;
-    background-color: #016e5ae1;
+    background-color: #016e5ac1;
 }
 
 section#container {
@@ -69,8 +72,8 @@ section#container {
     transform: translate(-50%, -50%);
 
     margin: auto;
-    width: 300px;
-    height: 550px;
+    width: 320px;
+    height: auto;
     text-align: center;
 }
 
@@ -97,14 +100,14 @@ label {
 label.form {
     display: block;
     font-weight: bold;
-    padding-bottom: 15px;
+    padding: 0px 0px 15px 12px;
 }
 
 
 div#formulario input {
     border-radius: 5px;
-    margin: auto;
     border: none;
+    margin: auto;
 }
 
 .entradas {
@@ -112,15 +115,16 @@ div#formulario input {
     background-color: rgba(255, 255, 255, 0.668);
     width: 240px ;    
     padding: 10px 3px;
+    margin: 0px;
 }
 
 p#mostrarSenha {
     text-align: left;
-    padding: 10px 0px 0px 0px;
+    padding: 10px 0px 0px 15px;
     font-size: 12px;
 }
 
-#entrar {
+#entrar, #criarconta {
     background-color: var(--cor2);
     width: 100%;
     height: 40px;
