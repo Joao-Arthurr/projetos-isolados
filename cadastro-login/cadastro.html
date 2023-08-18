@@ -8,7 +8,44 @@
 </head>
 <body>
     <main>
-        <h1>Cadastro</h1>
+        <section id="container">
+            <div id="formulario">
+                <h1>Cadastra-se</h1>
+                <form action="" method="post">
+                    <p>
+                        <label class="form" for="nome">Nome:</label>
+                        <input class="entradas" type="text" placeholder="Digite seu nome completo">
+                    </p>
+                    <p>
+                        <label class="form" for="email">E-mail</label>
+                        <input class="entradas" type="email" name="email" id="email" placeholder="Digite seu e-mail">
+                    </p>
+                    <p>
+                        <label class="form" for="numero">Número:</label>
+                        <input class="entradas" type="number" name="numero" id="numero" placeholder="(__) _____-____">
+                    </p>
+                    <p>
+                        <label class="form" for="sexo">Sexo:</label>
+                        <input type="radio" name="sexo" id="mas" checked>
+                        <label for="mas" style="padding-right: 30px;">Masculino</label>
+                        <input type="radio" name="sexo" id="fem">
+                        <label for="fem">Feminino</label>
+                    </p>
+                    <p>
+                        <label class="form" for="novasenha">Senha:</label>
+                        <input class="entradas" type="password" name="novasenha" id="novasenha" placeholder="Crie sua senha">
+                    </p>
+                    <p>
+                        <label class="form" for="confirmar">Confirmar senha:</label>
+                        <input class="entradas" type="password" name="confirmar" id="confirmar" placeholder="Confirme sua senha">
+                    </p>
+                    <p id="mostrarSenha">
+                        <input type="checkbox" name="mostrarSenha" id="mostrarSenha" onclick="mostrar()">
+                        <label for="mostrarSenha">Mostrar senha</label>
+                    </p>
+                </form>
+            </div>
+        </section>
     </main>
 </body>
 </html>

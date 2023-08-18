@@ -20,16 +20,18 @@
 
 h1, h2 {
     font-family: var(--fontTitulo);
-    color: var(--cor2);
+    color: var(--cor1);
     font-weight: normal;
     text-align: center;
+    font-size: 2em;
     text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.483);
     padding-bottom: 15px;
 }
 p {
     font-family: var(--fontCorpo);
     color: var(--cor5);
-    padding: 15px 0px;
+    padding-top: 25px;
+    font-size: 1em;
 }
 
 a {
@@ -37,7 +39,8 @@ a {
     text-decoration: none;
     color: var(--cor1);
     font-weight: bold;
-    font-size: 14px;
+    font-size: 12px;
+    padding-top: 8px ;
 }
 
 a:hover {
@@ -71,7 +74,7 @@ section#container {
     text-align: center;
 }
 
-div#login {
+div#formulario {
     padding: 25px;
     border-radius: 20px;
     background-color: #02493cb5;
@@ -81,28 +84,40 @@ div#login {
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.762);
 }
 
-div#login > img {
+div#formulario > img {
     width: 80px;
     height: 80px;
 }
 
 label {
-    display: block;
     text-align: left;
     margin-bottom: -10px;
 }
 
-div#login input {
+label.form {
     display: block;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+
+div#formulario input {
     border-radius: 5px;
     margin: auto;
     border: none;
 }
 
-#login, #senha {
+.entradas {
+    display: block;
     background-color: rgba(255, 255, 255, 0.668);
     width: 240px ;    
     padding: 10px 3px;
+}
+
+p#mostrarSenha {
+    text-align: left;
+    padding: 10px 0px 0px 0px;
+    font-size: 12px;
 }
 
 #entrar {

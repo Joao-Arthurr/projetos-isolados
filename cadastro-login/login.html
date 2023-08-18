@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
     <main>
@@ -13,20 +12,24 @@
             <div id="img">
 
             </div>
-            <div id="login">
+            <div id="formulario">
                 <img src="imagens/img-usuario.png" alt="Usuario">
                 <h1>Login</h1>
-                <form action="">
+                <form action="" method="post">
                     <p>
-                        <label for="login">Login/E-mail:</label><br>
-                        <input type="text" name="login" id="login"  placeholder="Seu login" required>
+                        <label class="form" for="login">Login / e-mail:</label>
+                        <input class="entradas" type="text" name="login" id="login"  placeholder="Seu login" required>
                     </p>
                     <p>
-                        <label for="senha">Senha:</label><br>
-                        <input type="password" name="senha" id="senha" placeholder="Digite sua senha" required minlength="8">
+                        <label class="form" for="senha">Senha:</label>
+                        <input class="entradas" type="password" name="senha" id="senha" placeholder="Digite sua senha" required minlength="8">
+                    </p>
+                    <p id="mostrarSenha">
+                        <input type="checkbox" name="mostrarSenha" id="mostrarSenha" onclick="mostrar()">
+                        <label for="mostrarSenha">Mostrar senha</label>
                     </p>
                     <p>
-                        <input id="entrar" type="submit" value="Entrar"><br>
+                        <input id="entrar" type="submit" value="Entrar">
                         <a href="">Esqueci a senha</a>
                     </p>
                     <br>
@@ -38,5 +41,7 @@
             </div>
         </section>
     </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
