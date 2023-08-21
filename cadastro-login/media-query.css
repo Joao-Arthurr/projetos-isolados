@@ -1,16 +1,6 @@
 @charset "UTF-8";
 
-@media screen and (min-width: 768px) {
-    div#img{
-        display: inline-block;
-        margin: auto;
-        visibility: visible;
-        background:white url(imagens/img-login.jpg) no-repeat center center;
-        width: 300px;
-        height: 300px;
-        background-size: cover;
-    }
-
+@media screen and (min-width: 768px) and (max-width:1000px) {
     section#container {
         display: inline-block;
         position: absolute;
@@ -20,7 +10,17 @@
         width: 700px;
     }
 
-    div#formulario{
-        width: 250px;
+    
+}
+
+@media screen and (min-width: 1000px) {
+    div#img{
+        display: inline-block;
+        margin: auto;
+        visibility: visible;
+        background:white url(imagens/img-login.jpg) no-repeat center center;
+        width: 300px;
+        height: 300px;
+        background-size: cover;
     }
 }
