@@ -56,18 +56,19 @@ body{
     background-size: cover;
     background-attachment: fixed;
     width: 100vw;
-    height: 100vh;
+    height: 100vmax;
 }
 
 main {
     width: 100vw;
-    height: 100vh;
+    height: 100vmax;
     background-color: #016e5ac1;
+    
 }
 
 section#container {
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
 
