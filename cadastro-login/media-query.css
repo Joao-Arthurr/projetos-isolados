@@ -8,6 +8,22 @@
         left: 50%;
         transform: translate(-50%, -50%);
         width: 700px;
+        text-align: justify;
+    }
+
+    div#formulario {
+        height: 500px;
+        text-align: left;
+        
+    }
+
+    label.form {
+        padding: 12px 0px;
+    }
+
+    input.entradas {
+        display: inline;
+        margin: 0px;
     }
 
     
