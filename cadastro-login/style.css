@@ -40,7 +40,7 @@ a {
     color: var(--cor1);
     font-weight: bold;
     font-size: 12px;
-    padding-top: 8px ;
+    padding-top: 5px;
 }
 
 a:hover {
@@ -59,6 +59,10 @@ body{
     height: 100vh;
 }
 
+main {
+    margin: auto;
+}
+
 section#container {
     padding: 50px;
     margin: auto;
@@ -67,7 +71,11 @@ section#container {
     text-align: center;
 }
 
-div#logos > img {
+div#logos > a {
+    display: inline;
+}
+
+div#logos  img {
     width: 30px;
     padding: 2px;
     border-radius: 50%;
@@ -106,6 +114,11 @@ div#formulario input {
     border-radius: 5px;
     border: none;
     margin: auto;
+}
+
+p#bloco_sexo > label {
+    padding-right: 3dvh;
+    
 }
 
 .entradas {

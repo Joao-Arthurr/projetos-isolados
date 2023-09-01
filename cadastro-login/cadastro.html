@@ -23,12 +23,12 @@
                     </p>
                     <p>
                         <label class="form" for="numero">Número:</label>
-                        <input class="entradas" type="number" name="numero" id="numero" placeholder="(__) _____-____" required>
+                        <input class="entradas" type="tel" name="numero" id="numero" maxlength="14" placeholder="(   ) _____-____" required>
                     </p>
-                    <p>
+                    <p id="bloco_sexo">
                         <label class="form" for="sexo">Sexo:</label>
                         <input type="radio" name="sexo" id="mas" checked>
-                        <label for="mas" style="padding-right: 30px;">Masculino</label>
+                        <label for="mas">Masculino</label>
                         <input type="radio" name="sexo" id="fem">
                         <label for="fem">Feminino</label>
                     </p>
@@ -52,7 +52,7 @@
                         <input id="criarconta" type="button" value="Criar conta">
                     </p>
                     <p>
-                        Já possui uma conta?
+                        Já possui uma conta? <br>
                         <a href="login.html">Acessar</a>
                     </p>
                 </form>
