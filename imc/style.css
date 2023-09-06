@@ -88,24 +88,26 @@ form label {
     border-radius: 5px;
 }
 
-#homem {
+#homem, #mulher {
     display: inline-block;
     width: 47%;
     height: 40px;
-    background-color: rgba(101, 211, 248, 0.2);
-    color: rgb(126, 160, 171);
     margin-left: 5px;
     text-align: center;
 }
 
+#homem {
+    background-color: rgba(101, 211, 248, 0.2);
+    color: rgb(126, 160, 171);
+}
+
 #mulher {
-    display: inline-block;
-    width: 47%;
-    height: 40px;
     background-color: rgba(248, 104, 126, 0.2);
     color: rgb(165, 126, 131);
-    margin-left: 5px;
-    text-align: center;
+}
+
+#homem:hover {
+    cursor: pointer;
 }
 
 .entradas {
@@ -127,6 +129,12 @@ form label {
     background-color: var(--cor2);
     font-weight: bolder;
     color: white;
+}
+
+#calcular:hover {
+    background-color: #186899;
+    transition: 0.3s;
+    cursor: pointer;
 }
 
 table {
