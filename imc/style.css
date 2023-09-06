@@ -53,7 +53,7 @@ section > p {
 
 form {
     margin: auto;
-    width: 85%;
+    width: 90%;
     text-align: justify;
     border: 1px solid rgba(137, 169, 180, 0.728);
     padding: 20px;
@@ -130,7 +130,7 @@ form label {
 }
 
 table {
-    width: 85%;
+    width: 95%;
     margin: auto;
     border-collapse: collapse;
     font-size: 15px;
