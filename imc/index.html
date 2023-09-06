@@ -63,9 +63,15 @@
                 </p>
                 <form id="calculadora">
                     <p id="sexos">
-                        <label for="">Sexo:</label>
-                        <input id="mas" type="button" value="Homem">
-                        <input id="fem" type="button" value="Mulher">
+                        <label for="sexos">Sexo:</label>
+                        <div id="homem">
+                            <input id="mas" name="sexo" type="radio" value="H" checked>
+                            <label for="mas">Homem</label>
+                        </div>
+                        <div id="mulher">
+                            <input id="fem" name="sexo" type="radio" value="M">
+                            <label for="fem">Feminino</label>
+                        </div>
                     </p>
                     <p>
                         <label for="idade">Idade:</label>

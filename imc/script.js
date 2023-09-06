@@ -1,3 +1,5 @@
+var sexo = document.getElementsByName('sexo')
+
 function calcularIMC() {
     var txtIdade = document.getElementById('idade')
     var txtAltura = document.getElementById('altura')
