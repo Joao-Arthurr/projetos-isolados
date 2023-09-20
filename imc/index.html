@@ -66,32 +66,34 @@
                     <p id="sexos">
                         <label for="sexos">Sexo:</label>
                         <div id="homem">
-                            <input id="mas" name="sexo" type="radio" value="H" checked>
-                            <label for="mas">Homem</label>
+                            <input id="mas" name="sexo" type="radio" value="H">
+                            <label id="m" for="mas" onclick="homem()">Masculino</label>
                         </div>
                         <div id="mulher">
                             <input id="fem" name="sexo" type="radio" value="M">
-                            <label for="fem">Feminino</label>
+                            <label id="f" for="fem" onclick="mulher()">Feminino</label>
                         </div>
                     </p>
                     <p>
                         <label for="idade">Idade:</label>
                         <input class="entradas" type="number" name="idade" id="idade" min="0" max="100" placeholder="Ex: 25" required> anos
+                        <div id="erroIdade"></div>
                     </p>
+                    
                     <p>
                         <label for="altura">Altura:</label>
                         <input class="entradas" type="number" name="altura" id="altura" min="0" max="300" placeholder="Ex: 175" required> cm
+                        <div id="erroAltura"></div>
                     </p>
                     <p>
                         <label for="peso">Peso:</label>
                         <input class="entradas" type="number" name="peso" id="peso" min="0" max="200" placeholder="Ex: 80" required> kg
+                        <div id="erroPeso"></div>
                     </p>
                     <p id="butaoCalc">
                         <input id="calcular" type="button" value="Calcular" onclick="calcularIMC()">
                     </p>
-                    <div id="res">
-                        
-                    </div>
+                    <div id="res"></div>
                 </form>
             </section>
             <section>

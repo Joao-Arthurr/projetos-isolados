@@ -97,16 +97,26 @@ form label {
 }
 
 #homem {
-    background-color: rgba(101, 211, 248, 0.2);
-    color: rgb(126, 160, 171);
+    background-color: #65d3f833;
+    color: #7ea0ab;
 }
 
 #mulher {
-    background-color: rgba(248, 104, 126, 0.2);
-    color: rgb(165, 126, 131);
+    background-color: #f8687e33;
+    color: #a57e83;
 }
 
 #homem:hover {
+    background-color: rgb(71, 90, 188);
+    color: white;
+}
+
+#mulher:hover {
+    background-color: #e17676;
+    color: white;
+}
+
+label:hover {
     cursor: pointer;
 }
 
