@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+body {
+    margin: 0px;
+}
+
+main {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    margin: 0px;
+    padding: 0px;
+    height: 200px;
+    background: rgb(7, 125, 42) url(imagens/logo-fundo-p.jpg) no-repeat center center;
+    background-size: cover
+}
+
+header > h1 {
+    margin: 0px;
+    padding: 0px;
+}
