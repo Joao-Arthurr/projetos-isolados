@@ -5,17 +5,9 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-main {
-    margin: 0px;
-    padding: 20px;
-}
-
 header {
     margin: 0px;
     padding: 0px;
-    height: 280px;
-    background: rgb(7, 125, 42) url(imagens/logo-fundo-g.jpg) no-repeat center center;
-    background-size: cover
 }
 
 header > h1 {
@@ -25,9 +17,24 @@ header > h1 {
 
 nav {
     margin: 0px;
-    padding: 15px 0px;
+    padding: 20px 0px;
     background-color: #1b7e42ff;
     text-align: left;
+}
+
+div#logo {
+    display: inline-block;
+}
+
+div#logo > img {
+    width: px;
+}
+
+menu {
+    display: block;
+    background-color: white;
+    padding: 9px 20px;
+    margin: 0px;
 }
 
 span#menu {
@@ -37,17 +44,9 @@ span#menu {
     cursor: pointer;
 }
 
-menu {
-    display: none;
-    background-color: white;
-    padding: 5px;
-    margin: 0px;
-}
-
 menu > ul > li > a {
     color: #1b7e42ff;
     text-decoration: none;
-    padding-left: 15px;
     font-weight: bold;
 }
 
@@ -63,10 +62,25 @@ menu > ul {
 }
 
 menu > ul > li {
-    padding: 8px 0px;
+    padding: 4px 0px;
+}
+
+main {
+    margin: 0px;
+    padding: 20px;
+}
+
+main > p {
+    text-align: justify;
+    text-indent: 25px;
 }
 
 footer {
     padding: 20px;
-    background-color: rgba(223, 255, 202, 0.212);
+    background-color: #1b7e42ff;
+    color: white;
+}
+
+footer > a {
+    color: white;
 }
