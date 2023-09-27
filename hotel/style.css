@@ -13,7 +13,7 @@ main {
 header {
     margin: 0px;
     padding: 0px;
-    height: 200px;
+    height: 280px;
     background: rgb(7, 125, 42) url(imagens/logo-fundo-g.jpg) no-repeat center center;
     background-size: cover
 }
