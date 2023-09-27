@@ -6,16 +6,22 @@
     <title>Braz Hotel</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="imagens/iconehotel.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
 <body>
     <header>
     </header>
     <nav>
-        <a href="">Sobre</a>
-        <a href="">Reservas</a>
-        <a href="">Cardápio</a>
-        <a href="">Localização</a>
-        <a href="">Contato</a>
+        <span id="menu" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <menu id="itens">
+            <ul>
+                <li><a href="">Sobre</a></li>
+                <li><a href="">Reservas</a></li>
+                <li><a href="">Cardápio</a></li>
+                <li><a href="">Localização</a></li>
+                <li><a href="">Contato</a></li>
+            </ul>
+        </menu>
     </nav>
     <main>
         <h1>Sobre Hotel Braz</h1>
@@ -29,8 +35,10 @@
         <a href="">contatobrazhotel@gmail.com</a> 
         <br>
         <a href="">instagram.com/Brazhotel</a>
-        <p>TELEFONES</p>
+        <p>TELEFONES:</p>
         <p>(87) 9999-9999</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

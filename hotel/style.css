@@ -25,18 +25,48 @@ header > h1 {
 
 nav {
     margin: 0px;
-    padding: 20px;
-    background-color: rgb(228, 254, 228);
+    padding: 15px 0px;
+    background-color: #1b7e42ff;
+    text-align: left;
 }
 
-nav > a {
-    color: rgb(39, 97, 39);
+span#menu {
+    padding-left: 20px;
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+}
+
+menu {
+    display: none;
+    background-color: white;
+    padding: 5px;
+    margin: 0px;
+}
+
+menu > ul > li > a {
+    color: #1b7e42ff;
     text-decoration: none;
-    padding-right: 15px;
-    
+    padding-left: 15px;
+    font-weight: bold;
+}
+
+menu > ul > li > a:hover {
+    color: rgb(10, 67, 33);
+}
+
+menu > ul {
+    list-style-type: none;
+    text-align: left;
+    padding: 0px;
+    margin: 0px;
+}
+
+menu > ul > li {
+    padding: 8px 0px;
 }
 
 footer {
     padding: 20px;
-    background-color: rgb(245, 255, 245);
+    background-color: rgba(223, 255, 202, 0.212);
 }
