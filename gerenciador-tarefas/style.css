@@ -29,12 +29,18 @@ nav {
 
 nav > p {
     display: inline-block;
+    margin: 15px 8px 2px 5px;
+    spa ;
 }
+
+nav > p:hover {
+    border-bottom: 1px solid white;
+}
+
 
 nav > p > a {
     color: white;
     text-decoration: none;
-    padding-left: 8px;
 }
 
 main {
@@ -42,6 +48,7 @@ main {
 }
 
 div#semTarefas {
+    display: none;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -51,23 +58,41 @@ div#semTarefas {
 div#semTarefas > img {
     width: 306px;
     height: 204px;
+}
 
+div#listaTarefas {
+    max-width: 720px;
+    padding: 20px;
+    margin: auto;
+    background-color: rgb(92, 90, 90);
+    text-align: left;
+}
+
+div#listaTarefas > #input {
+    display: block;
+    
+}
+
+div#listaTarefas > #descricao {
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    color: white;
+    font-size: 1em;
 }
 
 div#btAdicionar {
     position: absolute;
     transform: translate(-50%, -50%);
-    top: 90%;
+    top: 92%;
     left: 90%;
     text-align: center;
-    
 }
 
 div#btAdicionar > input {
-    padding: 1px 10px;
-    font-size: 2em;
+    padding: 1px 12px;
+    font-size: 2.5em;
     border-radius: 50%;
     border: none;
-    background-color: rgb(145, 210, 232);
+    background-color: rgb(42, 98, 117);
     text-align: center;
 }
