@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+header > h1 {
+    margin: 0px;
+    padding: 10px;
+    font-size: 1.5em;
+}
+
+nav {
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(61, 61, 61);
+}
+
+nav > p {
+    display: inline-block;
+}
+
+nav > p > a {
+    color: white;
+    text-decoration: none;
+    padding-left: 8px;
+}
+
+main {
+    text-align: center;
+}
+
+div#semTarefas {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div#semTarefas > img {
+    width: 306px;
+    height: 204px;
+
+}
+
+div#btAdicionar {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 90%;
+    left: 90%;
+    text-align: center;
+    
+}
+
+div#btAdicionar > input {
+    padding: 1px 10px;
+    font-size: 2em;
+    border-radius: 50%;
+    border: none;
+    background-color: rgb(145, 210, 232);
+    text-align: center;
+}
